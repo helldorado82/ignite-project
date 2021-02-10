@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.container {
+width: 100%;
+height: 100vh;
+font-family: 'Anton', sans-serif;
+overflow-y:auto;
+
+
+
+
+}
+.container::before{
+    content: "";
+    background-size: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-image: url(./pexels-jason-villanueva-851555.jpg);
+    background-position: center;
+    opacity: 0.7;
+    
+}
+.nav-container {
+    display: flex;
+    background-color: #5c5959db;
+    color: white;
+    height:100px;
+    position: fixed;
+    left: 0;
+    top:0;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    width: 100%;
+    
+}
+.nav-bar  {
+    display: flex;
+    
+    align-items: center;
+   
+    margin: 0;
+    
+    justify-content: space-between;
+}
+.nav-bar li {
+    padding: 15px;
+    list-style: none;
+    border: 1px solid white;
+    margin: 12px 20px;
+    text-align: center;
+    
+}
+ul{
+    padding: 0;
+    list-style-type: none !important;
+}
+.header {
+    display: flex;
+    font-family: 'Anton', sans-serif;
+    max-width: 300px;
+    margin-left: 10px;
+    position: absolute;
+    mix-blend-mode: difference;
+    top: 150px;
+    
+    
+}
+.header h1{
+    font-size: 5rem;
+    color:black;
+}
+#menu-section {
+    display: flex;
+	justify-content: center;
+	
+	max-width: 100%;
+	margin: auto;
+    
+    background-image: linear-gradient(to top, rgb(172, 117, 117), rgb(85, 58, 58));
+    
+    
+    
+}
+#menu-section img {
+    width: 100%;
+    height: auto;
+    
+}
+.menu-content{
+    display: flex;
+	flex-direction: column;
+	flex: 1 1 300px;
+	/* 
+	In the order, equal to
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 300px;
+	*/
+    flex-basis: 0cm;
+	margin: 2em;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-container a {
+    text-decoration: none;
+    color: white
+}
+#story-section {
+    display: flex;
+    
+    max-width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    justify-items: auto;
+    text-align: justify;
+    background-image: linear-gradient(to bottom, rgb(172, 117, 117), rgb(215, 170, 170));
+    
+}
+#story-section img{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    
+    
+}
+#story-section p {
+    padding: 20px;
+}
+

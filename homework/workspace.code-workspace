@@ -1,0 +1,13 @@
+{
+    "folders": [
+		{
+			"path": "../../../Desktop/js-basics"
+		},
+		{
+			"path": ".."
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "strive"
+    }
+}

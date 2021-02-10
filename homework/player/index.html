@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/76d4d94d08.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <main id="main">
+            <div id="menu">
+                <img src="https://hantavirusofficial.com/wp-content/uploads/2019/12/Spotify_Logo_RGB_White.png" alt="spotify logo" />
+                <div class="search">
+                    <input type="text" placeholder="search..." id="search-text" />
+                
+                <i class="fas fa-search" onclick="searchSong()"></i>
+            </div>
+            </div>
+            <div id="songs"></div>
+        </main>
+        <div id="player">
+            
+            
+            </div>
+            <div class="controls">
+                <button id="play" onclick="playPause()"><i class="fas fa-play"></i><i class="fas fa-pause"></i></button>
+                <button><i class="fas fa-volume-up"></i></button>
+                <input type="range" id="volume" oninput="setVolume(this.value)" min="0" max="1" step="0.01" value="1">
+           
+    </div>
+    
+    <script >
+        window.onload = async () =>{
+            await renderSongs("linkin park")
+            loadMenu()
+        }
+    </script>
+</body>
+</html>

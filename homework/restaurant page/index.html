@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+    <script src="./script.js"></script>
+    <title>Sushi a volontà</title>
+</head>
+<body>
+    <div class="container">
+    <h1 id="header">Sushi a volontà</h1>
+</div>
+<div class="reservation">
+    <hj3>Book your table here</hj3>
+    <div class="form">
+   <form action="" method="post">
+       <ul class="form-list"><li class="form-row"><label for="name">Name</label>
+       <input type="text" name="name" id="name"></li>
+       <li class="form-row"><label for="phone">Phone number</label>
+       <input type="tel" name="phone" id="phone"></li>
+       <li class="form-row"><label for="people">Guests</label>
+       <input style="max-width: 60px;"type="number" name="numberOfPersons" id="people"><label for="smoking">Smoking?</label>
+       <select  name="" id="smoking">
+       <option value="true">Yes</option>
+       <option value="false">No</option>
+       </select><label for="date">Date</label>
+       <input type="date" name="dateTime" id="date"></li>
+       <li class="form-row"></li>
+       <li class="form-row"></li>
+       <li class="form-row">
+       <textarea name="specialrequests" id="special" cols="100" rows="5">Please write any special request here</textarea>
+       </li>
+       <li class="form-row">
+       <button type="submit">Confirm booking</button>
+       </li></ul>
+   </form>
+</div>
+</div>
+</body>
+</html>
